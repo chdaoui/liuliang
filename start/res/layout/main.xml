@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/tab1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp" />
+
+        <LinearLayout
+            android:id="@+id/xx2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/num1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="刷新列表" />
+
+            <Button
+                android:id="@+id/num2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="退出程序" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ExpandableListView
+            android:id="@+id/elv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/num3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="刷新列表" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <DigitalClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14pt" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="本月流量限额："
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/stream"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="确定" />
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="流量报警开" />
+    </LinearLayout>
+
+</FrameLayout>

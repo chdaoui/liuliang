@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SocketActivity!</string>
+    <string name="app_name">Socket</string>
+
+    <string name="send">发送查询请求</string>
+    <string name="help">帮助信息</string>
+    
+    <string name="mounth_total_3g">本月已使用的3G流量</string>
+    <string name="mounth_total_wifi">本月已使用的wifi流量</string>
+    <string name="mounth_total">本月总流量限额</string>
+    <string name="mounth_total_left">本月剩余流量</string>
+    
+    <string name="system_ctrl">选项设置</string>
+    <string name="history_view">查看历史流量</string>
+
+</resources>
